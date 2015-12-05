@@ -1,0 +1,15 @@
+.veritcal-center {
+	align-items: center;
+
+}
+
+.jumbotron {
+	background-image: src="pic1.jpg";
+}
+.active {
+	color: #c0392b;
+}
+
+.btn-default {
+	color: #1abc9c;
+}
