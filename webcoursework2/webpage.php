@@ -21,7 +21,7 @@ echo "";
 ?>
 
 <p>
-<h2>hello <?php echo $array[1]; ?></h2>
+<h2>hello <?php echo $array[0]; ?></h2>
 </p>
 
 
