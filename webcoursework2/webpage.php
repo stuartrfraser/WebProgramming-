@@ -16,6 +16,18 @@ for($id = 0; $id < 6; $id++) {
   array_push($nameArray, $name);
 }
 
+$SQL = $db->prepare("SELECT logo FROM twitteraccounts WHERE id=:id");
+
+$logoArray = array();
+
+for($id = 0; $id < 6; $id++) {
+  
+  $SQL->execute(array(':id'=>$id));
+  $result = $SQL->fetch();
+  $logo = $result['logo'];
+  array_push($nameArray, $logo);
+}
+
 ?>
 
 
@@ -79,7 +91,7 @@ for($id = 0; $id < 6; $id++) {
   <!-- Wrapper for slides -->
   <div class="carousel-inner">
     <div class="item active">
-      <img src="http://placehold.it/1200x315" alt="...">
+      <img src="<?php echo $logoArray[0]; ?>" alt="...">
       <div class="carousel-caption">
           <h3><?php echo $nameArray[0]; ?></h3>
       </div>
