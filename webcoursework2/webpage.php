@@ -1,42 +1,28 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD
 <?php
-//Connecting to mySQL 
 $db = new PDO('mysql:dbname=srf32;host=mysql-server-1;charset=utf8', 'srf32','abcsrf32354') or die("bye");
 $db->setAttribute(PDO::ATTR_EMULATE_PREPARES, false);
 $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 $id = rand(1,6);
 
-//Selecting the table from phpMyAdmin
-$SQL = $db->query("SELECT * FROM twitteraccounts WHERE id=:id");
+$SQL = $db->prepare("SELECT * FROM twitteraccounts WHERE id=:id");
 
-//Count the returned rows
-if($SQL->num_rows != 0){
-  //turn result into an array
-  while($rows = $resultSet -> fetch_assoc()){
-
-  $id = $rows['id'];
-  $name = $rows['name'];
-  $username = $rows['username'];
-  $url = $rows['url'];
-  $description = $rows['description'];
-  $logo = $rows['logo'];
-
-  echo "<p> Name: $name <br> Username: $username </p>"
-  
+$SQL->execute(array(
+       ':id'=>$id
+));
+$result = $SQL->fetch();
+foreach($result as $name) {
+echo "Hello ";
+echo $name;
+break;
 }
-
-}
-else{
-  echo "No results";
-}
-
-//$result = array($SQL->fetch());
-
 //$ins = $db->query("INSERT INTO `f28wp`.`amigos` (`id`, `name`, `photo`) VALUES ('0', 'scott', 'djdjd.gif')");
 //print_r($result);
 echo "";
 ?>
-
+<p>
+<h2>hello <?php echo $name; ?></h2>
+</p>
 
 <html lang="en">
 
