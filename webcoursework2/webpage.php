@@ -7,12 +7,14 @@ $id = rand(0,5);
 
 $SQL = $db->prepare("SELECT name FROM twitteraccounts WHERE id=:id");
 
-$result_array = array();
-$SQL->execute(array(':id'=>$id));
-$result = $SQL->fetch()
-
+$SQL->execute(array(
+       ':id'=>$id
+));
+$result = $SQL->fetch();
 foreach($result as $name) {
-  array_push($result_array, $result);
+echo "Hello ";
+echo $name;
+break;
 }
   
   
