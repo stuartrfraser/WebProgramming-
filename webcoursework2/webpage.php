@@ -6,7 +6,7 @@ $id = rand(1,6);
 
 $SQL = $db->prepare("SELECT name FROM twitteraccounts WHERE id=:id");
 
-$array = array();
+$name_array = array();
 
 for($id = 0; $id < 6; $id++) {
   
@@ -20,9 +20,7 @@ for($id = 0; $id < 6; $id++) {
 //print_r($result);
 echo "";
 ?>
-<p>
-<h2>hello <?php echo $array[3]; ?></h2>
-</p>
+
 
 
 
@@ -156,12 +154,12 @@ echo "";
 	</li>
 
 	<!-- six differnet tabs for displaying different twitter acounts --> 
-  	<li > <a href="#tab1" data-toggle="tab"> <?php echo $name; ?></a> </li>
-  	<li ><a href="#tab2" data-toggle="tab">Sky News</a></li>
-  	<li ><a href="#tab3" data-toggle="tab">Mashable</a></li>
-	<li ><a href="#tab4"data-toggle="tab">The Verge</a></li>
-	<li ><a href="#tab5" data-toggle="tab">BBC Sport</a></li>
-	<li ><a href="#tab6" data-toggle="tab">Sky Sports </a></li>
+  	<li > <a href="#tab1" data-toggle="tab"> <?php echo $name_array[0];?></a> </li>
+  	<li ><a href="#tab2" data-toggle="tab"><?php echo $name_array[1];?></a></li>
+  	<li ><a href="#tab3" data-toggle="tab"><?php echo $name_array[2];?></a></li>
+	<li ><a href="#tab4"data-toggle="tab"><?php echo $name_array[3];?></a></li>
+	<li ><a href="#tab5" data-toggle="tab"><?php echo $name_array[4];?></a></li>
+	<li ><a href="#tab6" data-toggle="tab"><?php echo $name_array[5];?></a></li>
    </ul>
 </div>
 
