@@ -10,8 +10,9 @@ $SQL = $db->prepare("SELECT name FROM twitteraccounts WHERE id=:id");
 $result_array = array();
 $SQL->execute(array(':id'=>$id));
 
-while($result = $SQL->fetch())
+for($id=0; $id<6; $id = $id +1)
 {
+  $result = $SQL->fetch()
   array_push($result_array, $result['name']);
 }
 
