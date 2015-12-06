@@ -1,16 +1,23 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD
 <?php
 $db = new PDO('mysql:dbname=srf32;host=mysql-server-1;charset=utf8', 'srf32','abcsrf32354') or die("bye");
+
 $db->setAttribute(PDO::ATTR_EMULATE_PREPARES, false);
 $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-//$id = rand(0,5);
+$id = rand(1,6);
 
-$row = mysql_fetch_array(mysql_query("SELECT name FROM twitteraccounts WHERE id='$_GET[id]'");
+$SQL = $db->prepare("SELECT name FROM twitteraccounts WHERE id=:id");
+$SQL->execute(array(
+       ':id'=>$id
+));
+$result = $SQL->fetchAll();
 
-  
+//$ins = $db->query("INSERT INTO `f28wp`.`amigos` (`id`, `name`, `photo`) VALUES ('0', 'scott', 'djdjd.gif')");
+//print_r($result);
+echo "";
 ?>
 <p>
-<h2>hello <?php echo $row[id]; ?></h2>
+<h2>hello <?php echo $result; ?></h2>
 </p>
 
 
