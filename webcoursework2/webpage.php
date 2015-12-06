@@ -12,8 +12,8 @@ for($id = 0; $id < 6; $id++) {
   
   $SQL->execute(array(':id'=>$id));
   $result = $SQL->fetch();
-
-  array_push($array, $result);
+  $name = $result['name'];
+  array_push($array, $name);
 }
 
 //$ins = $db->query("INSERT INTO `f28wp`.`amigos` (`id`, `name`, `photo`) VALUES ('0', 'scott', 'djdjd.gif')");
