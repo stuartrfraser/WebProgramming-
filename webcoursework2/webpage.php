@@ -2,22 +2,22 @@
 <?php
 $db = new PDO('mysql:dbname=srf32;host=mysql-server-1;charset=utf8', 'srf32','abcsrf32354') or die("bye");
 $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-$id = 0;
+$id = 1;
 
 $SQL = $db->prepare("SELECT name FROM twitteraccounts WHERE id=$id");
+$SQL->bindParam(':id', $id, PDO::PARAM_STR);
 
-$array = array();
-
-//$SQL->execute(array(':id'=>$id));
-$result = $SQL->fetch();
-foreach($result as $name) {
-
-array_push($array,$name);
-$id ++;
+try{
+  $SQL->execute();
 }
-//$ins = $db->query("INSERT INTO `f28wp`.`amigos` (`id`, `name`, `photo`) VALUES ('0', 'scott', 'djdjd.gif')");
-//print_r($result);
-echo "";
+catch(PDOException $e){
+  echo errorHandle($e);
+}
+
+while($row = $SQL->fetch(PDO::FETCH_ASSOC)){
+  print_r($row);
+}
+
 ?>
 
 <p>
