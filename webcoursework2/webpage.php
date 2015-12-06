@@ -11,11 +11,8 @@ $SQL->execute(array(
        ':id'=>$id
 ));
 $result = $SQL->fetch();
-foreach($result as $name) {
-echo "Hello ";
-echo $name;
-break;
-}
+$name = $result['name'];
+
 //$ins = $db->query("INSERT INTO `f28wp`.`amigos` (`id`, `name`, `photo`) VALUES ('0', 'scott', 'djdjd.gif')");
 //print_r($result);
 echo "";
