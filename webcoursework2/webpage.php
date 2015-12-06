@@ -27,7 +27,7 @@ array_push($array, $name);
 echo "";
 ?>
 <p>
-<h2>hello <?php echo $array[1]; ?></h2>
+<h2>hello <?php echo $array[2]; ?></h2>
 </p>
 
 
