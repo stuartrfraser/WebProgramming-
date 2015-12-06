@@ -3,18 +3,20 @@
 $db = new PDO('mysql:dbname=srf32;host=mysql-server-1;charset=utf8', 'srf32','abcsrf32354') or die("bye");
 $db->setAttribute(PDO::ATTR_EMULATE_PREPARES, false);
 $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-$id = 5;
+$id = 0;
 
 $SQL = $db->prepare("SELECT name FROM twitteraccounts WHERE id=:id");
 
 $result_array = array();
 $SQL->execute(array(':id'=>$id));
+$result = $SQL->fetch()
 
-for($id=0; $id<6; $id = $id +1)
-{
-  $result = $SQL->fetch()
+foreach($result as $name) {
   array_push($result_array, $result['name']);
 }
+  
+  
+
 
 //$ins = $db->query("INSERT INTO `f28wp`.`amigos` (`id`, `name`, `photo`) VALUES ('0', 'scott', 'djdjd.gif')");
 //print_r($result);
