@@ -21,7 +21,7 @@ for($id = 0; $id < 6; $id++) {
 echo "";
 ?>
 <p>
-<h2>hello <?php echo $array[2]; ?></h2>
+<h2>hello <?php echo $array[3]; ?></h2>
 </p>
 
 
