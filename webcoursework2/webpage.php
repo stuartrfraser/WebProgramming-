@@ -5,18 +5,22 @@ $db->setAttribute(PDO::ATTR_EMULATE_PREPARES, false);
 $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 $id = 0;
 
-$SQL = $db->prepare("SELECT * FROM twitteraccounts WHERE id=:id");
+$query = "SELECT * FROM twitteraccounts WHERE id=:id";
+$result = mysql_query($query);
 
-$SQL->execute(array(':id'=>$id));
-$result = $SQL->fetch();
-$name = $result['name'];
+$result_array = array();
+while($row = mysql_fetch_assoc($result))
+{
+  $result_array[] = $row['name'];
+}
+
 
 //$ins = $db->query("INSERT INTO `f28wp`.`amigos` (`id`, `name`, `photo`) VALUES ('0', 'scott', 'djdjd.gif')");
 //print_r($result);
 echo "";
 ?>
 <p>
-<h2>hello <?php echo $name; ?></h2>
+<h2>hello <?php echo $result_array[1]; ?></h2>
 </p>
 
 <html lang="en">
