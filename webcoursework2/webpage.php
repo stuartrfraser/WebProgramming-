@@ -12,6 +12,8 @@ $result = $db->query($SQL);
 
 //$ins = $db->query("INSERT INTO `f28wp`.`amigos` (`id`, `name`, `photo`) VALUES ('0', 'scott', 'djdjd.gif')");
 //print_r($result);
+
+
 ?>
 
 <html lang="en">
@@ -141,7 +143,7 @@ $result = $db->query($SQL);
 	</li>
 
 	<!-- six differnet tabs for displaying different twitter acounts --> 
-  	<li > <a href="#tab1" data-toggle="tab"> </a>BBC News</li>
+  	<li > <a href="#tab1" data-toggle="tab"> </a><?php $SQL ?></li>
   	<li ><a href="#tab2" data-toggle="tab">Sky News</a></li>
   	<li ><a href="#tab3" data-toggle="tab">Mashable</a></li>
 	<li ><a href="#tab4"data-toggle="tab">The Verge</a></li>
