@@ -9,7 +9,7 @@ $SQL ="SELECT name FROM twitteraccounts";
 $result = $db->query($SQL);
 
 
-
+echo "$result";
 
 //$ins = $db->query("INSERT INTO `f28wp`.`amigos` (`id`, `name`, `photo`) VALUES ('0', 'scott', 'djdjd.gif')");
 //print_r($result);
@@ -67,42 +67,45 @@ $result = $db->query($SQL);
     <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
     <li data-target="#carousel-example-generic" data-slide-to="1"></li>
     <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="4"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="5"></li>
   </ol> 
  
   <!-- Wrapper for slides -->
   <div class="carousel-inner">
     <div class="item active">
-      <img src="http://placehold.it/1200x315" alt="......">
+      <img src="http://placehold.it/1200x315" alt="...">
       <div class="carousel-caption">
           <h3>BBC News</h3>
       </div>
     </div>
     <div class="item">
-      <img src="http://placehold.it/1200x315" alt="......">
+      <img src="http://placehold.it/1200x315" alt="...">
       <div class="carousel-caption">
           <h3>Sky News</h3>
       </div>
     </div>
     <div class="item">
-      <img src="http://placehold.it/1200x315" alt="......">
+      <img src="http://placehold.it/1200x315" alt="...">
       <div class="carousel-caption">
           <h3>Mashable</h3>
       </div>
     </div>
     <div class="item">
-      <img src="http://placehold.it/1200x315" alt="......">
+      <img src="http://placehold.it/1200x315" alt="...">
       <div class="carousel-caption">
           <h3>The Verge</h3>
       </div>
     </div>
     <div class="item">
-      <img src="http://placehold.it/1200x315" alt="......">
+      <img src="http://placehold.it/1200x315" alt="...">
       <div class="carousel-caption">
           <h3>BBC Sport</h3>
       </div>
     </div>
     <div class="item">
-      <img src="http://placehold.it/1200x315" alt="......">
+      <img src="http://placehold.it/1200x315" alt="...">
       <div class="carousel-caption">
           <h3>Sky Sports</h3>
       </div>
@@ -144,7 +147,7 @@ $result = $db->query($SQL);
 	</li>
 
 	<!-- six differnet tabs for displaying different twitter acounts --> 
-  	<li > <a href="#tab1" data-toggle="tab"> <?php echo $result; ?></a> </li>
+  	<li > <a href="#tab1" data-toggle="tab"> BBC News</a> </li>
   	<li ><a href="#tab2" data-toggle="tab">Sky News</a></li>
   	<li ><a href="#tab3" data-toggle="tab">Mashable</a></li>
 	<li ><a href="#tab4"data-toggle="tab">The Verge</a></li>
