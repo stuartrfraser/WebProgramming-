@@ -13,9 +13,7 @@ for($id = 0; $id < 6; $id++) {
   $SQL->execute(array(':id'=>$id));
   $result = $SQL->fetch();
 
-foreach($result as $name) {
-
-array_push($array, $name);
+  array_push($array, $result);
 }
 
 }
@@ -27,7 +25,7 @@ array_push($array, $name);
 echo "";
 ?>
 <p>
-<h2>hello <?php echo $array[6]; ?></h2>
+<h2>hello <?php echo $array[1]; ?></h2>
 </p>
 
 
