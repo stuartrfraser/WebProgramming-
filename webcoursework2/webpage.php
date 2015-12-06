@@ -2,7 +2,7 @@
 <?php
 $db = new PDO('mysql:dbname=srf32;host=mysql-server-1;charset=utf8', 'srf32','abcsrf32354') or die("bye");
 $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-$id = 1;
+$id = 0;
 
 $SQL = $db->prepare("SELECT name FROM twitteraccounts WHERE id=$id");
 $SQL->bindParam(':id', $id, PDO::PARAM_STR);
