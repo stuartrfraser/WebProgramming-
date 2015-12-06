@@ -5,11 +5,8 @@ $db->setAttribute(PDO::ATTR_EMULATE_PREPARES, false);
 $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 $id = rand(1,6);
 
-$SQL = $db->prepare("SELECT * FROM twitteraccounts WHERE id=:id");
+$SQL = $db->prepare("SELECT * FROM twitteraccounts WHERE id=0");
 
-$SQL->execute(array(
-       ':id'=>$id
-));
 $result = $SQL->fetch();
 $name = $result['name'];
 
