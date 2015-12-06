@@ -13,7 +13,7 @@ $SQL->execute(array(
 $result = $SQL->fetch();
 
 echo "Hello ";
-echo $result[1];
+echo $result;
 break;
 }
 //$ins = $db->query("INSERT INTO `f28wp`.`amigos` (`id`, `name`, `photo`) VALUES ('0', 'scott', 'djdjd.gif')");
