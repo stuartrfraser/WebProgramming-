@@ -16,7 +16,7 @@ catch(PDOException $e){
     echo errorHandle($e);
 }
 
-while($row =  $SQL->fetch(PDO: :FETCH_ASSOC))
+while($row =  $SQL->fetch(PDO : : FETCH_ASSOC))
 {
   print_r($row);
 }
