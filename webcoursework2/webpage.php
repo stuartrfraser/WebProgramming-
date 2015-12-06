@@ -3,12 +3,12 @@
 $db = new PDO('mysql:dbname=srf32;host=mysql-server-1;charset=utf8', 'srf32','abcsrf32354') or die("bye");
 $db->setAttribute(PDO::ATTR_EMULATE_PREPARES, false);
 $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-//$id = rand(0,5);
+$id = 5;
 
-$SQL = $db->prepare("SELECT * FROM twitteraccounts ");
+$SQL = $db->prepare("SELECT * FROM twitteraccounts WHERE id=:id");
 
 $result_array = array();
-//$SQL->execute(array(':id'=>$id));
+$SQL->execute(array(':id'=>$id));
 
 while($result = $SQL->fetch())
 {
