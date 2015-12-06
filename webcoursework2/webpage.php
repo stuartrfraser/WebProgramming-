@@ -12,7 +12,7 @@ $SQL->execute(array(':id'=>$id));
 $result = $SQL->fetch()
 
 foreach($result as $name) {
-  array_push($result_array, $name);
+  array_push($result_array, $result);
 }
   
   
