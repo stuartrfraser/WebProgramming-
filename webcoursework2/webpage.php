@@ -6,23 +6,18 @@ $id = rand(1,6);
 
 $SQL = $db->prepare("SELECT name FROM twitteraccounts WHERE id=:id");
 
-$array = array();
+$nameArray = array();
 
 for($id = 0; $id < 6; $id++) {
   
   $SQL->execute(array(':id'=>$id));
   $result = $SQL->fetch();
   $name = $result['name'];
-  array_push($array, $name);
+  array_push($nameArray, $name);
 }
 
-//$ins = $db->query("INSERT INTO `f28wp`.`amigos` (`id`, `name`, `photo`) VALUES ('0', 'scott', 'djdjd.gif')");
-//print_r($result);
-echo "";
 ?>
-<p>
-<h2>hello <?php echo $array[3]; ?></h2>
-</p>
+
 
 
 
@@ -156,12 +151,12 @@ echo "";
 	</li>
 
 	<!-- six differnet tabs for displaying different twitter acounts --> 
-  	<li > <a href="#tab1" data-toggle="tab"> <p><?php echo $array[0]; ?></p></a> </li>
-  	<li ><a href="#tab2" data-toggle="tab"><p><?php echo $array[1]; ?></p></a></li>
-  	<li ><a href="#tab3" data-toggle="tab"><p><?php echo $array[2]; ?></p></a></li>
-	<li ><a href="#tab4"data-toggle="tab"><p><?php echo $array[3]; ?></p></a></li>
-	<li ><a href="#tab5" data-toggle="tab"> <p><?php echo $array[4]; ?></p></a></li>
-	<li ><a href="#tab6" data-toggle="tab"> <p><?php echo $array[5]; ?></p> </a></li>
+  	<li > <a href="#tab1" data-toggle="tab"> <p><?php echo $nameArray[0]; ?></p></a> </li>
+  	<li ><a href="#tab2" data-toggle="tab"><p><?php echo $nameArray[1]; ?></p></a></li>
+  	<li ><a href="#tab3" data-toggle="tab"><p><?php echo $nameArray[2]; ?></p></a></li>
+	<li ><a href="#tab4"data-toggle="tab"><p><?php echo $nameArray[3]; ?></p></a></li>
+	<li ><a href="#tab5" data-toggle="tab"> <p><?php echo $nameArray[4]; ?></p></a></li>
+	<li ><a href="#tab6" data-toggle="tab"> <p><?php echo $nameArray[5]; ?></p> </a></li>
    </ul>
 </div>
 
