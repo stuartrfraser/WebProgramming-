@@ -149,7 +149,7 @@ echo "";
 	</li>
 
 	<!-- six differnet tabs for displaying different twitter acounts --> 
-  	<li > <a href="#tab1" data-toggle="tab"> BBC News</a> </li>
+  	<li > <a href="#tab1" data-toggle="tab"> <?php echo $name; ?></a> </li>
   	<li ><a href="#tab2" data-toggle="tab">Sky News</a></li>
   	<li ><a href="#tab3" data-toggle="tab">Mashable</a></li>
 	<li ><a href="#tab4"data-toggle="tab">The Verge</a></li>
