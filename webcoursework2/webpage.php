@@ -11,7 +11,7 @@ $result_array = array();
 $SQL->execute(array(':id'=>$id));
 while($result = $SQL->fetch())
 {
-  $result_array = $result['name'];
+  array_push($result_array, $result['name']);
 }
 
 //$ins = $db->query("INSERT INTO `f28wp`.`amigos` (`id`, `name`, `photo`) VALUES ('0', 'scott', 'djdjd.gif')");
