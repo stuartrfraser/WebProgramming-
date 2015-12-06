@@ -141,12 +141,12 @@ $result = $db->query($SQL);
 	</li>
 
 	<!-- six differnet tabs for displaying different twitter acounts --> 
-  	<li > <a href="#tab1" data-toggle="tab"> </a></li>
-  	<li ><a href="#tab2" data-toggle="tab">Sky   News</a></li>
+  	<li > <a href="#tab1" data-toggle="tab"> </a>BBC News</li>
+  	<li ><a href="#tab2" data-toggle="tab">Sky News</a></li>
   	<li ><a href="#tab3" data-toggle="tab">Mashable</a></li>
-	<li ><a href="#tab4"data-toggle="tab">The   Verge</a></li>
-	<li ><a href="#tab5" data-toggle="tab">BBC   Sport</a></li>
-	<li ><a href="#tab6" data-toggle="tab">Sky   Sports </a></li>
+	<li ><a href="#tab4"data-toggle="tab">The Verge</a></li>
+	<li ><a href="#tab5" data-toggle="tab">BBC Sport</a></li>
+	<li ><a href="#tab6" data-toggle="tab">Sky Sports </a></li>
    </ul>
 </div>
 
@@ -156,7 +156,8 @@ $result = $db->query($SQL);
 <div class="tab-content">
 
 	<div class="tab-pane " id="tab1">
-  	<a class="twitter-timeline" href="https://twitter.com/BBCNews" data-widget-id="668378590451511296">Tweets 		by @BBCNews</a> <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test	(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+  	<a class="twitter-timeline" href="https://twitter.com/BBCNews" data-widget-id="668378590451511296">Tweets 		by @BBCNews</a> 
+    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test	(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
 	</div>
 
 	<div class="tab-pane" id="tab2">
