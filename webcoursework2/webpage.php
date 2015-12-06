@@ -7,20 +7,25 @@ $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 $id = 1;
 
 $SQL = $db->prepare("SELECT name FROM twitteraccounts WHERE id=:id");
-$array = SQL->execute(array(':id'=>$id));
-//$result = $SQL->fetch();
+$SQL->bindParam(':id', $id, PDO: :PARAM_STR);
 
-while($result = $SQL->fetch())
-{
-  array_push($array, $result['name']);
+try{
+  $SQL->execute();
+}
+catch(PDOException $e){
+    echo errorHandle($e);
 }
 
-//$ins = $db->query("INSERT INTO `f28wp`.`amigos` (`id`, `name`, `photo`) VALUES ('0', 'scott', 'djdjd.gif')");
-//print_r($result);
-echo "";
+while($row =  $SQL->fetch(PDO: :FETCH_ASSOC))
+{
+  print_r($row);
+}
+
+
+
 ?>
 <p>
-<h2>hello <?php echo $result ?></h2>
+<h2>hello <?php echo $row ?></h2>
 </p>
 
 
