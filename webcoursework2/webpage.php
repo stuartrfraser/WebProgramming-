@@ -3,36 +3,14 @@
 $db = new PDO('mysql:dbname=srf32;host=mysql-server-1;charset=utf8', 'srf32','abcsrf32354') or die("bye");
 $db->setAttribute(PDO::ATTR_EMULATE_PREPARES, false);
 $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-$id = rand(0,5);
+//$id = rand(0,5);
 
-$SQL = $db->prepare("SELECT name FROM twitteraccounts WHERE id=:id");
+$row = mysql_fetch_array(mysql_query("SELECT name FROM twitteraccounts WHERE id='$_GET[id]'");
 
-$names = array();
-
-if($SQL->num_rows != 0)
-{
-  while($result = $SQL->fetch())
-  {
-      array_push($names, $result);
-  }
-
-}
-
-foreach($result as $name) {
-echo "Hello ";
-echo $name;
-break;
-}
   
-  
-
-
-//$ins = $db->query("INSERT INTO `f28wp`.`amigos` (`id`, `name`, `photo`) VALUES ('0', 'scott', 'djdjd.gif')");
-//print_r($result);
-echo "";
 ?>
 <p>
-<h2>hello <?php echo $names[1]; ?></h2>
+<h2>hello <?php echo $row[id]; ?></h2>
 </p>
 
 
