@@ -17,7 +17,7 @@ $result = $SQL->fetchAll();
 echo "";
 ?>
 <p>
-<h2>hello <?php echo $result; ?></h2>
+<h2>hello <?php echo $result->fetch; ?></h2>
 </p>
 
 
