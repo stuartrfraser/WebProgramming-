@@ -15,7 +15,7 @@ catch(PDOException $e){
 }
 
 while($row = $SQL->fetch(PDO::FETCH_ASSOC)){
-  echo "$row";
+  echo $row;
 }
 
 ?>
