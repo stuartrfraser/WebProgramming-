@@ -4,7 +4,7 @@ $db = new PDO('mysql:dbname=srf32;host=mysql-server-1;charset=utf8', 'srf32','ab
 
 $db->setAttribute(PDO::ATTR_EMULATE_PREPARES, false);
 $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-$id = rand(1,6);
+$id = 1;
 
 $SQL = $db->prepare("SELECT name FROM twitteraccounts WHERE id=:id");
 $SQL->execute(array(
@@ -17,7 +17,7 @@ $result = $SQL->fetchAll();
 echo "";
 ?>
 <p>
-<h2>hello <?php echo $result[1]; ?></h2>
+<h2>hello <?php echo $result[0]; ?></h2>
 </p>
 
 
