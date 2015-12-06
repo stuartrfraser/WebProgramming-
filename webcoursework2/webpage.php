@@ -5,7 +5,7 @@ $db->setAttribute(PDO::ATTR_EMULATE_PREPARES, false);
 $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 $id = 5;
 
-$SQL = $db->prepare("SELECT * FROM twitteraccounts WHERE id=:id");
+$SQL = $db->prepare("SELECT name FROM twitteraccounts WHERE id=:id");
 
 $result_array = array();
 $SQL->execute(array(':id'=>$id));
