@@ -2,7 +2,7 @@
 <?php
 $db = new PDO('mysql:dbname=srf32;host=mysql-server-1;charset=utf8', 'srf32','abcsrf32354') or die("bye");
 $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-$id = 0;
+$id = 2;
 
 $SQL = $db->prepare("SELECT name FROM twitteraccounts WHERE id=$id");
 $SQL->bindParam(':id', $id, PDO::PARAM_STR);
@@ -21,7 +21,7 @@ while($row = $SQL->fetch(PDO::FETCH_ASSOC)){
 ?>
 
 <p>
-<h2>hello <?php echo $array[0]; ?></h2>
+<h2>hello <?php echo $row; ?></h2>
 </p>
 
 
