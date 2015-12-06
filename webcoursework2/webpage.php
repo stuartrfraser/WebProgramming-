@@ -9,7 +9,7 @@ $SQL ="SELECT name FROM twitteraccounts";
 $result = $db->query($SQL);
 
 
-echo "$result";
+//echo "$result";
 
 //$ins = $db->query("INSERT INTO `f28wp`.`amigos` (`id`, `name`, `photo`) VALUES ('0', 'scott', 'djdjd.gif')");
 //print_r($result);
