@@ -81,37 +81,37 @@ for($id = 0; $id < 6; $id++) {
     <div class="item active">
       <img src="http://placehold.it/1200x315" alt="...">
       <div class="carousel-caption">
-          <h3>BBC News</h3>
+          <h3><?php echo $nameArray[0]; ?></h3>
       </div>
     </div>
     <div class="item">
       <img src="http://placehold.it/1200x315" alt="...">
       <div class="carousel-caption">
-          <h3>Sky News</h3>
+          <h3><?php echo $nameArray[1]; ?></h3>
       </div>
     </div>
     <div class="item">
       <img src="http://placehold.it/1200x315" alt="...">
       <div class="carousel-caption">
-          <h3>Mashable</h3>
+          <h3><?php echo $nameArray[2]; ?></h3>
       </div>
     </div>
     <div class="item">
       <img src="http://placehold.it/1200x315" alt="...">
       <div class="carousel-caption">
-          <h3>The Verge</h3>
+          <h3><?php echo $nameArray[3]; ?></h3>
       </div>
     </div>
     <div class="item">
       <img src="http://placehold.it/1200x315" alt="...">
       <div class="carousel-caption">
-          <h3>BBC Sport</h3>
+          <h3><?php echo $nameArray[4]; ?></h3>
       </div>
     </div>
     <div class="item">
       <img src="http://placehold.it/1200x315" alt="...">
       <div class="carousel-caption">
-          <h3>Sky Sports</h3>
+          <h3><?php echo $nameArray[5]; ?></h3>
       </div>
     </div>
   </div>
