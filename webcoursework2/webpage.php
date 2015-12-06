@@ -4,11 +4,11 @@ $db = new PDO('mysql:dbname=srf32;host=mysql-server-1;charset=utf8', 'srf32','ab
 $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 $id = 0;
 
-$SQL = $db->prepare("SELECT name FROM twitteraccounts WHERE id=:id");
+$SQL = $db->prepare("SELECT name FROM twitteraccounts WHERE id=$id");
 
 $array = array();
 
-$SQL->execute(array(':id'=>$id));
+//$SQL->execute(array(':id'=>$id));
 $result = $SQL->fetch();
 foreach($result as $name) {
 
