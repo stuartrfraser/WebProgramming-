@@ -7,17 +7,15 @@ $id = rand(1,6);
 
 $SQL = $db->prepare("SELECT name FROM twitteraccounts WHERE id=:id");
 
-$SQL->execute(array(
-       ':id'=>$id
-));
-$result = $SQL->fetch();
+
+$result = array($SQL->fetch());
 
 //$ins = $db->query("INSERT INTO `f28wp`.`amigos` (`id`, `name`, `photo`) VALUES ('0', 'scott', 'djdjd.gif')");
 //print_r($result);
 echo "";
 ?>
 <p>
-<h2>hello <?php echo $result['id']; ?></h2>
+<h2>hello <?php echo $result[1]; ?></h2>
 </p>
 
 <html lang="en">
