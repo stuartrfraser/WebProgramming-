@@ -157,11 +157,11 @@ echo "";
 
 	<!-- six differnet tabs for displaying different twitter acounts --> 
   	<li > <a href="#tab1" data-toggle="tab"> <p><?php echo $array[0]; ?></p></a> </li>
-  	<li ><a href="#tab2" data-toggle="tab">Sky News</a></li>
-  	<li ><a href="#tab3" data-toggle="tab">Mashable</a></li>
-	<li ><a href="#tab4"data-toggle="tab">The Verge</a></li>
-	<li ><a href="#tab5" data-toggle="tab">BBC Sport</a></li>
-	<li ><a href="#tab6" data-toggle="tab">Sky Sports </a></li>
+  	<li ><a href="#tab2" data-toggle="tab"><p><?php echo $array[1]; ?></p></a></li>
+  	<li ><a href="#tab3" data-toggle="tab"><p><?php echo $array[2]; ?></p></a></li>
+	<li ><a href="#tab4"data-toggle="tab"><p><?php echo $array[3]; ?></p></a></li>
+	<li ><a href="#tab5" data-toggle="tab"> <p><?php echo $array[4]; ?></p></a></li>
+	<li ><a href="#tab6" data-toggle="tab"> <p><?php echo $array[5]; ?></p> </a></li>
    </ul>
 </div>
 
