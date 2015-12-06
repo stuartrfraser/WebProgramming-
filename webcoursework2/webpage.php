@@ -154,12 +154,12 @@ echo "";
 	</li>
 
 	<!-- six differnet tabs for displaying different twitter acounts --> 
-  	<li > <a href="#tab1" data-toggle="tab"> <?php echo $name_array[0];?></a> </li>
-  	<li ><a href="#tab2" data-toggle="tab"><?php echo $name_array[1];?></a></li>
-  	<li ><a href="#tab3" data-toggle="tab"><?php echo $name_array[2];?></a></li>
-	<li ><a href="#tab4"data-toggle="tab"><?php echo $name_array[3];?></a></li>
-	<li ><a href="#tab5" data-toggle="tab"><?php echo $name_array[4];?></a></li>
-	<li ><a href="#tab6" data-toggle="tab"><?php echo $name_array[5];?></a></li>
+  	<li > <a href="#tab1" data-toggle="tab"> <p><?php echo $name_array[0];?></p></a> </li>
+  	<li ><a href="#tab2" data-toggle="tab"><p><?php echo $name_array[1];?></p></a></li>
+  	<li ><a href="#tab3" data-toggle="tab"><p><?php echo $name_array[2];?></p></a></li>
+	<li ><a href="#tab4"data-toggle="tab"><p><?php echo $name_array[3];?></p></a></li>
+	<li ><a href="#tab5" data-toggle="tab"><p><?php echo $name_array[4];?></p></a></li>
+	<li ><a href="#tab6" data-toggle="tab"><p><?php echo $name_array[5];?></p></a></li>
    </ul>
 </div>
 
