@@ -21,7 +21,7 @@ break;
 echo "";
 ?>
 <p>
-<h2>hello <?php echo $name[1]; ?></h2>
+<h2>hello <?php echo $name; ?></h2>
 </p>
 
 <html lang="en">
