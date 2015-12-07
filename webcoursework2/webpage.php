@@ -91,7 +91,7 @@ for($id = 0; $id < 6; $id++) {
   <!-- Wrapper for slides -->
   <div class="carousel-inner">
     <div class="item active">
-      <img src="BBC_News.jpg" alt="...">
+      <img src="https://pbs.twimg.com/profile_images/522359694891819009/D7KgM7an.jpeg" alt="...">
       <div class="carousel-caption">
           <h3><?php echo $nameArray[0]; ?></h3>
       </div>
