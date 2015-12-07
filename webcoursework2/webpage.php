@@ -212,26 +212,61 @@ for($id = 0; $id < 6; $id++) {
 	</div>
 
 	<div class="tab-pane" id="tab2">
+      <p>
+        <h3><?php echo $userArray[1]; ?></h3>
+        <container>
+        <p><?php echo $descArray[1]; ?></p>
+      </container>
+    </p> 
+
   	<a class="twitter-timeline" href="https://twitter.com/SkyNews" data-widget-id="669854133369839620">Tweets 		by @SkyNews</a>
 	<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
 	</div>
 
 	<div class="tab-pane" id="tab3">
+      <p>
+        <h3><?php echo $userArray[2]; ?></h3>
+        <container>
+        <p><?php echo $descArray[2]; ?></p>
+      </container>
+    </p> 
+
 	<a class="twitter-timeline" href="https://twitter.com/mashable" data-widget-id="669858405960581120">Tweets 		by @mashable</a>
 	<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
 	</div>
 
 	<div class="tab-pane" id="tab4">
+      <p>
+        <h3><?php echo $userArray[3]; ?></h3>
+        <container>
+        <p><?php echo $descArray[3]; ?></p>
+      </container>
+    </p> 
+
 	<a class="twitter-timeline" href="https://twitter.com/verge" data-widget-id="669859580927717376">Tweets by 		@verge</a>
 	<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
 	</div>
 
 	<div class="tab-pane" id="tab5">
+      <p>
+        <h3><?php echo $userArray[4]; ?></h3>
+        <container>
+        <p><?php echo $descArray[4]; ?></p>
+      </container>
+    </p> 
+
 	<a class="twitter-timeline" href="https://twitter.com/BBCSport" data-widget-id="669860381695807490">Tweets 		by @BBCSport</a>
 	<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
 	</div>
 
 	<div  class="tab-pane" id="tab6">
+      <p>
+        <h3><?php echo $userArray[5]; ?></h3>
+        <container>
+        <p><?php echo $descArray[5]; ?></p>
+      </container>
+    </p> 
+
 	<a class="twitter-timeline" href="https://twitter.com/SkySports" data-widget-id="669860739922923520">Tweets 		by @SkySports</a>
 	<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
 	</div>
