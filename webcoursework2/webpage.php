@@ -100,53 +100,27 @@ for($id = 0; $id < 6; $id++) {
 <!-- jumbatrom with login details and picture -->
 
   <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-  <!-- Indicators -->
-  <ol class="carousel-indicators">
-    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
-    <li data-target="#carousel-example-generic" data-slide-to="3"></li>
-    <li data-target="#carousel-example-generic" data-slide-to="4"></li>
-    <li data-target="#carousel-example-generic" data-slide-to="5"></li>
-  </ol> 
+  
  
   <!-- Wrapper for slides -->
   <div class="carousel-inner">
     <div class="item active">
       <center><img style="height: 30%;" src="<?php echo $logoArray[0]; ?>" alt="..."></center>
-      <div class="carousel-caption">
-          <h3><?php echo $nameArray[0]; ?></h3>
-      </div>
     </div>
     <div class="item ">
       <center><img style="height: 30%;" src="<?php echo $logoArray[1]; ?>" alt="..."></center>
-      <div class="carousel-caption">
-          <h3><?php echo $nameArray[1]; ?></h3>
-      </div>
     </div>
     <div class="item ">
       <center><img style="height: 30%;" src="<?php echo $logoArray[2]; ?>" alt="..."></center>
-      <div class="carousel-caption">
-          <h3><?php echo $nameArray[2]; ?></h3>
-      </div>
     </div>
     <div class="item">
       <center><img style="height: 30%;" src="<?php echo $logoArray[3]; ?>" alt="..."></center>
-      <div class="carousel-caption">
-          <h3><?php echo $nameArray[3]; ?></h3>
-      </div>
     </div>
     <div class="item">
       <center><img style="height: 30%;" src="<?php echo $logoArray[4]; ?>" alt="..."></center>
-      <div class="carousel-caption">
-          <h3><?php echo $nameArray[4]; ?></h3>
-      </div>
     </div>
     <div class="item">
       <center><img style="height: 30%;" src="<?php echo $logoArray[5]; ?>" alt="..."></center>
-      <div class="carousel-caption">
-          <h3><?php echo $nameArray[5]; ?></h3>
-      </div>
     </div>
   </div>
  
