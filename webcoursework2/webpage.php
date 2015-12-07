@@ -25,7 +25,19 @@ for($id = 0; $id < 6; $id++) {
   $getLogo->execute(array(':id'=>$id));
   $logoResult = $getLogo->fetch();
   $logo = $logoResult['logo'];
-  array_push($nameArray, $logo);
+  array_push($logoArray, $logo);
+}
+
+$getUser = $db->prepare("SELECT username FROM twitteraccounts WHERE id=:id");
+
+$userArray = array();
+
+for($id = 0; $id < 6; $id++) {
+  
+  $getUser->execute(array(':id'=>$id));
+  $userResult = $getUser->fetch();
+  $user = $userResult['username'];
+  array_push($userArray, $user);
 }
 
 ?>
@@ -179,6 +191,11 @@ for($id = 0; $id < 6; $id++) {
 <div class="tab-content">
 
 	<div class="tab-pane " id="tab1">
+    <p>
+        <h2></h2>
+
+    </p>  
+
   	<a class="twitter-timeline" href="https://twitter.com/BBCNews" data-widget-id="668378590451511296">Tweets 		by @BBCNews</a> 
     <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test	(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
 	</div>
