@@ -4,26 +4,26 @@ $db = new PDO('mysql:dbname=srf32;host=mysql-server-1;charset=utf8', 'srf32','ab
 $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 $id = rand(1,6);
 
-$SQL = $db->prepare("SELECT name FROM twitteraccounts WHERE id=:id");
+$getNames = $db->prepare("SELECT name FROM twitteraccounts WHERE id=:id");
 
 $nameArray = array();
 
 for($id = 0; $id < 6; $id++) {
   
-  $SQL->execute(array(':id'=>$id));
-  $result = $SQL->fetch();
+  $getNames->execute(array(':id'=>$id));
+  $result = $getNames->fetch();
   $name = $result['name'];
   array_push($nameArray, $name);
 }
 
-$SQL = $db->prepare("SELECT logo FROM twitteraccounts WHERE id=:id");
+$getLogo = $db->prepare("SELECT logo FROM twitteraccounts WHERE id=:id");
 
 $logoArray = array();
 
 for($id = 0; $id < 6; $id++) {
   
-  $SQL->execute(array(':id'=>$id));
-  $result = $SQL->fetch();
+  $getLogo->execute(array(':id'=>$id));
+  $result = $getLogo->fetch();
   $logo = $result['logo'];
   array_push($nameArray, $logo);
 }
@@ -92,7 +92,7 @@ for($id = 0; $id < 6; $id++) {
   <!-- Wrapper for slides -->
   <div class="carousel-inner">
     <div class="item active">
-      <img src="https://pbs.twimg.com/profile_images/522359694891819009/D7KgM7an.jpeg" alt="...">
+      <img src="http://placehold.it/1200x315" alt="...">
       <div class="carousel-caption">
           <h3><?php echo $nameArray[0]; ?></h3>
       </div>
