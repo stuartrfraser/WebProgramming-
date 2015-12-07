@@ -202,7 +202,7 @@ for($id = 0; $id < 6; $id++) {
 	<div class="tab-pane " id="tab1">
     <p>
         <h3><?php echo $userArray[0]; ?></h3>
-        <p><?php echo $descpArray[0]; ?></p>
+        <p><?php echo $descArray[0]; ?></p>
 
     </p>  
 
