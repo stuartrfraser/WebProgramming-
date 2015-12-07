@@ -151,11 +151,11 @@ for($id = 0; $id < 6; $id++) {
 
     		<li><a href="#">All</a></li>
     		<li role="separator" class="divider"></li>
-    		<li><a href="#">News</a></li>
+    		<li><a href="#news">News</a></li>
     		<li role="separator" class="divider"></li>
-    		<li><a href="#">Technology</a></li>
+    		<li><a href="#tech">Technology</a></li>
     		<li role="separator" class="divider"></li>
-    		<li><a href="#">Sports</a></li>
+    		<li><a href="#sport">Sports</a></li>
  	</ul>
 	</div>
 	</li>
@@ -246,6 +246,15 @@ for($id = 0; $id < 6; $id++) {
 	<a class="twitter-timeline" href="https://twitter.com/SkySports" data-widget-id="669860739922923520">Tweets 		by @SkySports</a>
 	<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
 	</div>
+
+  <div class="tab-pane" id="news">
+
+    <a class="twitter-timeline" href="https://twitter.com/SkyNews" data-widget-id="669854133369839620">Tweets     by @SkyNews</a>
+  <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+  <a class="twitter-timeline" href="https://twitter.com/BBCNews" data-widget-id="668378590451511296">Tweets     by @BBCNews</a> 
+    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test (d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+
+  </div>
 
 </div>
 </center>
