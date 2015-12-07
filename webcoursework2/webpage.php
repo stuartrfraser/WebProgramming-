@@ -11,8 +11,8 @@ $nameArray = array();
 for($id = 0; $id < 6; $id++) {
   
   $getNames->execute(array(':id'=>$id));
-  $result = $getNames->fetch();
-  $name = $result['name'];
+  $nameResult = $getNames->fetch();
+  $name = $nameResult['name'];
   array_push($nameArray, $name);
 }
 
@@ -23,8 +23,8 @@ $logoArray = array();
 for($id = 0; $id < 6; $id++) {
   
   $getLogo->execute(array(':id'=>$id));
-  $result = $getLogo->fetch();
-  $logo = $result['logo'];
+  $logoResult = $getLogo->fetch();
+  $logo = $logoResult['logo'];
   array_push($nameArray, $logo);
 }
 
