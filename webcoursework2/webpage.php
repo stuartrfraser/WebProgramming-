@@ -112,37 +112,37 @@ for($id = 0; $id < 6; $id++) {
  
   <!-- Wrapper for slides -->
   <div class="carousel-inner">
-    <div class="item active" style="height: 10%;">
+    <div class="item active" style="height: 30%;">
       <center><img src="<?php echo $logoArray[0]; ?>" alt="..."></center>
       <div class="carousel-caption">
           <h3><?php echo $nameArray[0]; ?></h3>
       </div>
     </div>
-    <div class="item "style="height: 10%;">
+    <div class="item "style="height: 30%;">
       <center><img src="<?php echo $logoArray[1]; ?>" alt="..."></center>
       <div class="carousel-caption">
           <h3><?php echo $nameArray[1]; ?></h3>
       </div>
     </div>
-    <div class="item " style="height: 10%;">
+    <div class="item " style="height: 30%;">
       <center><img src="<?php echo $logoArray[2]; ?>" alt="..."></center>
       <div class="carousel-caption">
           <h3><?php echo $nameArray[2]; ?></h3>
       </div>
     </div>
-    <div class="item" style="height: 10%;">
+    <div class="item" style="height: 30%;">
       <center><img src="<?php echo $logoArray[3]; ?>" alt="..."></center>
       <div class="carousel-caption">
           <h3><?php echo $nameArray[3]; ?></h3>
       </div>
     </div>
-    <div class="item" style="height: 10%;">
+    <div class="item" style="height: 30%;">
       <center><img src="<?php echo $logoArray[4]; ?>" alt="..."></center>
       <div class="carousel-caption">
           <h3><?php echo $nameArray[4]; ?></h3>
       </div>
     </div>
-    <div class="item" style="height: 10%;">
+    <div class="item" style="height: 30%;">
       <center><img src="<?php echo $logoArray[5]; ?>" alt="..."></center>
       <div class="carousel-caption">
           <h3><?php echo $nameArray[5]; ?></h3>
