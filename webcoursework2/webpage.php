@@ -112,7 +112,7 @@ for($id = 0; $id < 6; $id++) {
  
   <!-- Wrapper for slides -->
   <div class="carousel-inner">
-    <div class="item active">
+    <div class="item active slider-image">
       <center><img src="<?php echo $logoArray[0]; ?>" alt="..."></center>
       <div class="carousel-caption">
           <h3><?php echo $nameArray[0]; ?></h3>
