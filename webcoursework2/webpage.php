@@ -31,7 +31,7 @@ for($id = 0; $id < 6; $id++) {
 ?>
 
 
-
+<h3><?php echo $logoArray[0]; ?></h3>
 
 <html lang="en">
 
