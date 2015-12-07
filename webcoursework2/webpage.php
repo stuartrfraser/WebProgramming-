@@ -40,11 +40,20 @@ for($id = 0; $id < 6; $id++) {
   array_push($userArray, $user);
 }
 
-?>
+$getDesc = $db->prepare("SELECT description FROM twitteraccounts WHERE id=:id");
 
-<p>
-<h3><?php echo $logoArray[0]; ?></h3>
-</p>
+$descArray = array();
+
+for($id = 0; $id < 6; $id++) {
+  
+  $getDesc->execute(array(':id'=>$id));
+  $descResult = $getDesc->fetch();
+  $desc = $descResult['description'];
+  array_push($descArray, $desc);
+}
+
+
+?>
 
 <html lang="en">
 
@@ -192,7 +201,8 @@ for($id = 0; $id < 6; $id++) {
 
 	<div class="tab-pane " id="tab1">
     <p>
-        <h2></h2>
+        <h3><?php echo $userArray[0]; ?></h3>
+        <p><?php echo $descpArray[0]; ?></p>
 
     </p>  
 
