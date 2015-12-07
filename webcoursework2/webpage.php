@@ -202,8 +202,9 @@ for($id = 0; $id < 6; $id++) {
 	<div class="tab-pane " id="tab1">
     <p>
         <h3><?php echo $userArray[0]; ?></h3>
+        <container>
         <p><?php echo $descArray[0]; ?></p>
-
+      </container>
     </p>  
 
   	<a class="twitter-timeline" href="https://twitter.com/BBCNews" data-widget-id="668378590451511296">Tweets 		by @BBCNews</a> 
