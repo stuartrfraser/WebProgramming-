@@ -110,31 +110,31 @@ for($id = 0; $id < 6; $id++) {
       </div>
     </div>
     <div class="item">
-      <img src="http://placehold.it/1200x315" alt="...">
+      <center><img src="<?php echo $logoArray[1]; ?>" alt="..."></center>
       <div class="carousel-caption">
           <h3><?php echo $nameArray[1]; ?></h3>
       </div>
     </div>
     <div class="item">
-      <img src="http://placehold.it/1200x315" alt="...">
+      <center><img src="<?php echo $logoArray[2]; ?>" alt="..."></center>
       <div class="carousel-caption">
           <h3><?php echo $nameArray[2]; ?></h3>
       </div>
     </div>
     <div class="item">
-      <img src="http://placehold.it/1200x315" alt="...">
+      <center><img src="<?php echo $logoArray[3]; ?>" alt="..."></center>
       <div class="carousel-caption">
           <h3><?php echo $nameArray[3]; ?></h3>
       </div>
     </div>
     <div class="item">
-      <img src="http://placehold.it/1200x315" alt="...">
+      <center><img src="<?php echo $logoArray[4]; ?>" alt="..."></center>
       <div class="carousel-caption">
           <h3><?php echo $nameArray[4]; ?></h3>
       </div>
     </div>
     <div class="item">
-      <img src="http://placehold.it/1200x315" alt="...">
+      <center><img src="<?php echo $logoArray[5]; ?>" alt="..."></center>
       <div class="carousel-caption">
           <h3><?php echo $nameArray[5]; ?></h3>
       </div>
